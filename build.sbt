@@ -25,7 +25,8 @@ libraryDependencies += "io.gatling" % "gatling-test-framework" % gatlingVersion(
 libraryDependencies += "com.typesafe.play" %% "play-slick" % "3.0.3"
 libraryDependencies += "com.typesafe.play" %% "play-slick-evolutions" % "3.0.3"
 
-libraryDependencies += "com.h2database" % "h2" % "1.4.196"
+//libraryDependencies += "com.h2database" % "h2" % "1.4.196"
+libraryDependencies +=  "org.postgresql" % "postgresql" % "9.4.1209"
 
 // The Play project itself
 lazy val root = (project in file("."))
