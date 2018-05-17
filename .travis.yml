@@ -12,11 +12,12 @@ addons:
 env:
   global:
   - PGURL=jdbc:postgresql://localhost:5433/propertiesdb
+  - PGUSER=postgres
 
 
 
 before_script:
-  - psql -c 'create database propertiesdb;' -U builder
+  - psql -c 'create database propertiesdb;' -U postgres
 
 
 
