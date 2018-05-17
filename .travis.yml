@@ -11,7 +11,7 @@ addons:
     - postgresql-client-9.4
 env:
   global:
-  - PGURL=jdbc:postgresql://localhost:5433/propertiesdb
+  - PGURL=jdbc:postgresql://localhost:5432/propertiesdb
   - PGUSER=postgres
 
 
