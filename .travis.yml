@@ -1,5 +1,24 @@
 language: scala
 scala:
    - 2.12.4
+services:
+   - postgresql
+addons:
+  postgresql: "9.4"
+  apt:
+    packages:
+    - postgresql-9.4
+    - postgresql-client-9.4
+env:
+  global:
+  - PGURL=jdbc:postgresql://localhost:5433/propertiesdb
+
+
+
+before_script:
+  - psql -c 'create database propertiesdb;' -U builder
+
+
+
 
 
